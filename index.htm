@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Color Palette</title>
+<style>
+  :root { --bg:#0b0b0b; --fg:#f5f5f5; --muted:#bdbdbd; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+         background:var(--bg); color:var(--fg); padding:32px; }
+  h1{margin:0 0 8px; font-size:24px;} p{margin:0 0 24px; color:var(--muted);}
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px;}
+  .swatch{border-radius:16px; overflow:hidden; border:1px solid rgba(255,255,255,.08); box-shadow:0 8px 24px rgba(0,0,0,.25);}
+  .color{height:120px;}
+  .meta{padding:14px 16px 16px;}
+  .name{font-weight:600; letter-spacing:.2px;}
+  .hex{font-family:ui-monospace,Menlo,Consolas,monospace;}
+  .desc{color:var(--muted); font-size:14px; margin-top:6px; line-height:1.35;}
+</style>
+</head>
+<body>
+  <h1>Palette</h1>
+  <p>HTML swatches with names and hex codes.</p>
+  <section class="grid">
+    <article class="swatch">
+      <div class="color" style="background:#C75330;"></div>
+      <div class="meta">
+        <div class="name">Burnt Orange / Rust</div><div class="hex">#C75330</div>
+        <div class="desc">Warm, earthy orange with reddish undertones.</div>
+      </div>
+    </article>
+    <article class="swatch">
+      <div class="color" style="background:#9C7764;"></div>
+      <div class="meta">
+        <div class="name">Taupe Brown</div><div class="hex">#9C7764</div>
+        <div class="desc">Muted brown-gray, soft warmth and versatile.</div>
+      </div>
+    </article>
+    <article class="swatch">
+      <div class="color" style="background:#D6D6D6;"></div>
+      <div class="meta" style="color:#111;">
+        <div class="name">Light Gray / Gainsboro</div><div class="hex">#D6D6D6</div>
+        <div class="desc" style="color:#333;">Balanced, very light neutral gray.</div>
+      </div>
+    </article>
+    <article class="swatch">
+      <div class="color" style="background:#DCE5E4;"></div>
+      <div class="meta" style="color:#111;">
+        <div class="name">Pale Aqua / Mint Gray</div><div class="hex">#DCE5E4</div>
+        <div class="desc" style="color:#333;">Cool, airy blue-green tint.</div>
+      </div>
+    </article>
+    <article class="swatch">
+      <div class="color" style="background:#60876D;"></div>
+      <div class="meta">
+        <div class="name">Desaturated Teal / Sea Green</div><div class="hex">#60876D</div>
+        <div class="desc">Calm greenish-teal with gray undertones.</div>
+      </div>
+    </article>
+    <article class="swatch">
+      <div class="color" style="background:#2C544B;"></div>
+      <div class="meta">
+        <div class="name">Deep Teal / Forest Green</div><div class="hex">#2C544B</div>
+        <div class="desc">Rich, deep green-blue for statements.</div>
+      </div>
+    </article>
+    <article class="swatch">
+      <div class="color" style="background:#39555A;"></div>
+      <div class="meta">
+        <div class="name">Slate Blue-Green</div><div class="hex">#39555A</div>
+        <div class="desc">Dark, moody green-blue, cool undertones.</div>
+      </div>
+    </article>
+  </section>
+</body>
+</html>
